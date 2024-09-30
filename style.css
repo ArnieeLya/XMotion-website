@@ -223,4 +223,17 @@ footer p {
 	.form {
 		padding: 20px;
 	}
+
+	.about-images {
+		flex-direction: column;
+	}
+	
+	.about-images img {
+		width: 100%;
+	}
+	
+	.schedule-table {
+		font-size: smaller;
+	}
 }
+ 
