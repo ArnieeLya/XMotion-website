@@ -1,0 +1,226 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	background-color: #8f328746;
+	font-size: 15px;
+}
+
+/*header*/
+
+header {
+	background-image: url('img/меню.jpg');
+	background-size: cover;
+	background-position: center;
+
+	color: #fff;
+	padding: 100px 0;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 3.5em;
+	margin: 0;
+}
+
+/*nav*/
+
+nav {
+	background-color: #523c5a;
+	text-align: center;
+	padding: 10px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	margin: 0 15px;
+	font-size: 1.2em;
+	transition: color 0.3s ease;
+}
+
+nav a:hover {
+	color: #39883d;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	
+}
+
+/*sections*/
+
+.section {
+	padding: 60px 20px;
+	text-align: center;
+	margin-bottom: 40px;
+    position: relative;
+
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section h2 {
+	font-size: 2.5em;
+	margin-bottom: 20px;
+}
+
+.section p {
+	font-size: 20px;
+	line-height: 1.6;
+	color: #ffffff;
+}
+
+/*about*/
+
+.about {
+	background-color: #56488a;
+	color: white;
+}
+
+.about-images {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	gap: 15px;
+}
+
+.about-images img {
+	width: 32%;
+	border-radius: 10px;
+	transition: transform 0.3s ease;
+}
+
+.about-images img:hover {
+	transform: scale(1.05);
+}
+
+/*schedule*/
+
+.schedule {
+	background: #922bb19d;
+	color: white;
+}
+
+.schedule-table {
+	width: 100%;
+	margin-top: 20px;
+	border-collapse: collapse;
+	font-size: 20px;
+
+}
+
+.schedule-table th, .schedule-table td {
+	padding: 15px;
+	border: 1px solid #ddd;
+}
+
+.schedule-table th {
+	background-color: #581772;
+	color: white;
+}
+
+.schedule-table tr:nth-child(even) {
+	background-color: #53429277;
+}
+
+/* trainers */
+
+.trainers {
+	background-color: #342e6b;
+	color: #ffffff;
+}
+
+.trainers-grid {
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.trainer {
+	background-color: #ffffff;
+	color: #333;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	width: 500px;
+
+}
+
+.trainer:hover {
+	transform: translateY(-10px);
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.trainer img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.trainer h3 {
+    color: #BA55D3; /* Цвет заголовка (имя тренера) */
+    font-size: 1.8em;
+    margin-top: 15px;
+}
+
+.trainer p {
+    color: #4B0082; /* Цвет описания тренера */
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+
+
+/*fade-in */
+.fade-in {
+	opacity: 0;
+	transform: translateY(50px);
+	transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+
+
+/*footer*/
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+}
+
+footer p {
+	margin: 0;
+	font-size: 1em;
+}
+
+@media (max-width: 768px) {
+	.trainers-grid {
+		grid-template-columns: 1fr;
+	}
+
+	header h1 {
+		font-size: 2.5em;
+	}
+
+	.section h2 {
+		font-size: 2em;
+	}
+
+	.form {
+		padding: 20px;
+	}
+}

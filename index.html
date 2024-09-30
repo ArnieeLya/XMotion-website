@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css? family=Kaushan+Script|Montserrat:400,700&amp ; subset=cyrillic-ext" rel="stylesheet">
+    <title>X-Motiom | Главная</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Танцевальная K-POP студия X-Motion</h1>
+    </header>
+
+    <nav>
+        <a href="#about">О студии</a>
+        <a href="#schedule">Расписание</a>
+        <a href="#trainers">Руководитель</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="section about fade-in">
+            <h2>Наша История</h2>
+            <p>Танцуем к-поп больше 10 лет!
+            Делаем клипы, фотосессии, развлекательный контент, выступаем, учим танцам с нуля - живем полной к-поперской жизнью~
+            Присоединяйся к нам :)</p>
+            <p>Дата создания команды: 28.03.2012</p>
+
+            <div class="about-images">
+                <img src="img/bts.jpg" alt="Выступление кавер-денс с песней BTS (방탄소년단) Boy With Luv">
+                <img src="img/cd.jpg" alt="Выступление кавер-денс с песней TXT (투모로우바이투게더) Cat & Dog">
+                <img src="img/bwl.jpg" alt="Выступление кавер-денс с песней BTS (방탄소년단) Boy With Luv">
+            </div>
+        </section>
+
+        <section id="schedule" class="section schedule fade-in">
+            <h2>Расписание Занятий</h2>
+            <p>Занятия проходят по группам. Выберите подходящую группу</p>
+            <table class="schedule-table">
+                <tr>
+                    <th>Группа</th>
+                    <th>День недели</th>
+                    <th>Время</th>
+                </tr>
+                <tr>
+                    <td>Manke1</td>
+                    <td>Вторник
+                    <br>Четверг
+                    </td>
+                    <td>10:00 - 11:30</td>
+                </tr>
+                <tr>
+                    <td>Manke2</td>
+                    <td>Вторник
+                    <br>Четверг</td>
+                    <td>16:00 - 17:30</td>
+                </tr>
+                <tr>
+                    <td>XClass</td>
+                    <td>Вторник
+                    <br>Четверг</td>
+                    <td>19:00 - 20:30</td>
+                </tr>
+                <tr>
+                    <td>XMRed</td>
+                    <td>Среда
+                    <br>Суббота</br></td>
+                    <td>18:30 - 20:00
+                    <br>17:00 - 18:30
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="trainers" class="section trainers fade-in">
+            <h2>Наш Тренер</h2>
+            <div class="trainers-grid">
+                <div class="trainer">
+                    <img src="img/trener.jpg" alt="Единственный тренер и основатель X-Motiom">
+                    <h3>Ирина Такчинакова</h3>
+                    <p>Единственный тренер и основатель X-Motiom</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Танцевальная K-POP студия X-Motiom. Все права защищены.</p>
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll('.fade-in');
+
+        window.addEventListener('scroll', checkSections);
+
+        function checkSections() {
+            const triggerBottom = window.innerHeight / 5 * 4;
+
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+
+                if (sectionTop < triggerBottom) {
+                    section.classList.add('visible');
+                } else {
+                    section.classList.remove('visible');
+                }
+            });
+        }
+
+        checkSections();
+    </script>
+
+</body>
+</html>
