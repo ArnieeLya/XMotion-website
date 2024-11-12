@@ -28,6 +28,39 @@ header h1 {
 	margin: 0;
 }
 
+.social-section {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.social-text {
+	font-size: 1.2em;
+	margin-bottom: 5px;
+	color: white;
+}
+
+.social-links {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+
+.social-links a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+
+.social-links img {
+	width: 100%;
+	height: 100%;
+	transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+	transform: scale(1.1); /* Увеличение при наведении */
+}
+
 /*nav*/
 
 nav {
@@ -205,6 +238,40 @@ footer {
 footer p {
 	margin: 0;
 	font-size: 1em;
+}
+
+.map {
+	width: 100%;
+	max-width: 600px;
+	height: 300px;
+	border: none;
+}
+
+.email-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #8c0ac0; /* Яркий оранжевый цвет для выделения */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px; /* Слегка скругленные углы */
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавные переходы */
+}
+
+.email-button:hover {
+    background-color:  #bb56e2; /* Темно-оранжевый цвет при наведении */
+    transform: scale(1.05); /* Легкое увеличение кнопки при наведении */
+}
+
+.email-button:active {
+    background-color: #8c0ac0; /* Еще более темный оранжевый при нажатии */
+    transform: scale(1); /* Возвращаем размер кнопки при нажатии */
+}
+
+.email-button:focus {
+    outline: none; /* Убираем обводку при фокусе */
+    box-shadow: 0 0 0 3px rgba(255, 87, 51, 0.5); /* Легкая подсветка при фокусе */
 }
 
 @media (max-width: 768px) {
